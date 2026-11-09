@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+```
+<title>تفاصيل المنتج | VOGIC</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="product.css">
+```
+
+</head>
+
+<body>
+
+```
+<header>
+    <h1>VOGIC</h1>
+    <a href="index.html">العودة للرئيسية</a>
+</header>
+
+<main>
+
+    <section class="product-page">
+
+        <img id="product-image" src="" alt="صورة المنتج">
+
+        <div class="product-info">
+
+            <h2 id="product-name"></h2>
+
+            <p id="product-description"></p>
+
+            <p class="product-price" id="product-price"></p>
+
+            <hr>
+
+            <h3>خصصي تصميمك</h3>
+
+            <form id="customization-form">
+
+                <label for="customer-name">الاسم:</label>
+                <input
+                    type="text"
+                    id="customer-name"
+                    placeholder="اكتبي الاسم"
+                    required
+                >
+
+                <label for="date-option">هل ترغبين بإضافة تاريخ؟</label>
+
+                <select id="date-option">
+                    <option value="without-date">بدون تاريخ</option>
+                    <option value="with-date">إضافة تاريخ</option>
+                </select>
+
+                <input
+                    type="date"
+                    id="event-date"
+                    style="display: none;"
+                >
+
+                <label for="design-color">اللون المفضل:</label>
+
+                <select id="design-color" required>
+                    <option value="">اختاري اللون</option>
+                    <option value="بيج">بيج</option>
+                    <option value="وردي">وردي</option>
+                    <option value="ذهبي">ذهبي</option>
+                    <option value="أبيض">أبيض</option>
+                    <option value="بني">بني</option>
+                    <option value="other">لون آخر</option>
+                </select>
+
+                <input
+                    type="text"
+                    id="custom-color"
+                    placeholder="اكتبي اللون الذي ترغبين به"
+                    style="display: none;"
+                >
+
+                <label for="design-text">العبارة المطلوبة:</label>
+
+                <textarea
+                    id="design-text"
+                    placeholder="اكتبي العبارة التي تريدينها"
+                ></textarea>
+
+               <label for="design-file">ارفعي صورة أو ملف (اختياري):</label>
+
+                <input
+                    type="file"
+                    id="design-file"
+                    accept="image/*,.pdf"
+                >
+
+                <button type="submit">إضافة إلى السلة</button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+</main>
+
+<script src="product.js"></script>
+```
+
+</body>
+</html>
